@@ -21,7 +21,9 @@ class Home extends Component {
   render() {
     return (
       <div id="main-content" className="home">
-        <h1>Mike Joyce - Web Developer</h1>
+        <div style={{ padding: '0px 10px 0px 10px' }}>
+          <h1>Mike Joyce - Web Developer</h1>
+        </div>
         <div className="usa-row">
           <div className="usa-row" style={{ paddingLeft: '8%', paddingRight: '8%' }}>
             <p style={{ textAlign: 'center', verticalAlign: 'middle', display: 'table-cell' }}>
@@ -30,12 +32,13 @@ class Home extends Component {
               My work has been in front-end technologies
               like AngularJS, React, Highcharts and Leaflet, back-end frameworks like Node.js,
               Express and PHP, and databases like MySQL and MongoDB.
-              Certified AWS Solutions Architect - Associate.
+              Certified AWS Solutions Architect - Associate. View all the tools I like
+              working with <a href="https://stackshare.io/mjoyce91/mystack">here</a>.
             </p>
           </div>
         </div>
         <br /><br />
-        <div className="logos">
+        <div className="logos" style={{ paddingBottom: '200px' }}>
           <div className="usa-row">
             <div className="usa-width-one-half">
               <Badge image="github" title="Github" url="https://github.com/mjoyce91" />
@@ -47,7 +50,6 @@ class Home extends Component {
             </div>
           </div>
         </div>
-        <br /> <br /> <br />
         <Footer />
       </div>
     );
