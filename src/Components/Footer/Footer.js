@@ -13,7 +13,7 @@ class Footer extends Component {
   render() {
     return (
       <div className="footer">
-        This site is built in React. View the code here.
+        This site is built in React. View the code <a href="https://github.com/mjoyce91/mikejoycedev.com">here</a>.
       </div>
     );
   }
