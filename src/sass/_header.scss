@@ -1,0 +1,26 @@
+.site-header {
+
+  //overerides
+  @media screen and (min-width: 951px) {
+    .usa-header-basic .usa-navbar {
+        width: 70%;
+    }
+  }
+
+  @media screen and (min-width: 951px) {
+    .usa-navbar {
+      height: 7rem;
+    }
+  }
+
+  @media screen and (min-width: 951px) {
+    .usa-nav {
+      padding-top: 1.6rem;
+    }
+  }
+
+  .active-url {
+    color: $color-primary;
+  }
+
+}
