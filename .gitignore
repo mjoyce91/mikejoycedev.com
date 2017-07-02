@@ -6,8 +6,9 @@
 # testing
 /coverage
 
+# include the build script to easily deploy to AWS static site
 # production
-/build
+# /build
 
 # misc
 .DS_Store
