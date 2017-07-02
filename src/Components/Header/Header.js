@@ -19,7 +19,6 @@ class Header extends Component {
       const url = u === currentUrl ? 'active-url' : '';
       return url;
     };
-    console.log(currentUrl);
     return (
       <div className="header site-header">
         <header className="usa-header usa-header-basic" role="banner">
