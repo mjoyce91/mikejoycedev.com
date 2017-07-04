@@ -13,6 +13,7 @@
         "window": true,
         "document": true,
         "localStorage": true,
+        "alert": true,
     },
     "settings": {
         "import/resolver": {
