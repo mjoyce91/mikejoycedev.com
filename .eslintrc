@@ -29,5 +29,6 @@
         // will be re-enabled after configuring test and build to use jsx
         "react/jsx-filename-extension": "off",
         "jsx-a11y/anchor-has-content": "off",
+        "linebreak-style": [0],
     }
 }
