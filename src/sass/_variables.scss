@@ -1,3 +1,22 @@
 // Global Variables
 
 $color-primary: #0071bc;
+
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+body {
+  height:100%;
+}
+
+#main-content {
+  margin-bottom: 100px;
+}
+
+//uswds hides overflow-y when on mobile. this was causing an ability to scroll after route changes
+.usa-mobile_nav-active {
+    overflow-y: auto;
+}

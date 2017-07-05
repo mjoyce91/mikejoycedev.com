@@ -37,7 +37,7 @@ class Home extends Component {
           </div>
           <br /><br /><br />
           <div className="logos">
-            <div className="usa-row">
+            <div className="usa-row clearfix">
               <div className="usa-width-one-half">
                 <Badge image="github" title="Github" url="https://github.com/mjoyce91" />
                 <br />

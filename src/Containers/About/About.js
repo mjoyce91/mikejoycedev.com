@@ -80,7 +80,7 @@ class About extends Component {
       </div>
     ));
     const mapData = this.state.places.length ?
-    (<div className="usa-row">
+    (<div className="usa-row clearfix">
       <center className="usa-width-five-twelfths">
         {placeNames}
       </center>
