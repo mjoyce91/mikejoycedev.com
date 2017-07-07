@@ -6,15 +6,6 @@ import PropTypes from 'prop-types'; //eslint-disable-line
 Leaflet.Icon.Default.imagePath = //eslint-disable-line
   '//cdnjs.cloudflare.com/ajax/libs/leaflet/1.1.0/images/' //eslint-disable-line
 
-const myIcon = {
-  iconUrl: '/assets/img/marker-icon-2x.png',
-  iconSize: [25, 40],
-  iconAnchor: [25, 40],
-  popupAnchor: [-12, -36],
-  shadowSize: [25, 40],
-  shadowAnchor: [25, 40],
-};
-
 class MapComponent extends Component {
   constructor(props) {
     super(props);
@@ -29,12 +20,28 @@ class MapComponent extends Component {
   }
 
   render() {
+    const markerIcon = (m, i) => {
+      const myIcon = {
+        iconUrl: '/assets/img/marker-icon-2x.png',
+        iconSize: [25, 40],
+        iconAnchor: [25, 40],
+        popupAnchor: [-12, -36],
+        shadowSize: [25, 40],
+        shadowAnchor: [25, 40],
+      };
+      if (m.active) {
+        myIcon.iconUrl = '/assets/img/marker-purple.png';
+      } else if (i === 0) {
+        myIcon.iconUrl = '/assets/img/marker-gold.png';
+      }
+      return myIcon;
+    };
     const position = [this.state.lat, this.state.lng];
-    const markers = this.props.markers.map(marker => (
+    const markers = this.props.markers.map((marker, i) => (
       <Marker
         key={marker.place}
         position={marker.coords}
-        icon={Leaflet.icon({ ...myIcon, iconUrl: marker.active ? '/assets/img/marker-purple.png' : myIcon.iconUrl })}
+        icon={Leaflet.icon(markerIcon(marker, i))}
       >
         <Popup>
           <span> <strong>{marker.place}</strong> <br /> {marker.description} </span>

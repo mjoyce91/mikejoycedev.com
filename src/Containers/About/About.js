@@ -12,11 +12,11 @@ class About extends Component {
       places: [
       ],
       alertText: null,
+      alert: false,
     };
   }
 
   componentWillMount() {
-    // Make a request for a user with a given ID
     this.getPlaces();
   }
 
@@ -42,11 +42,11 @@ class About extends Component {
           (b.votes) - (a.votes)
         ));
         this.setState({ places });
-        this.state.alertText = null;
+        this.setState({ alertText: 'Thanks for voting!', alert: false });
       })
       .catch((error) => {
         if (error.response.status === 429) {
-          this.state.alertText = 'Slow your horses! Wait a bit before voting again.';
+          this.setState({ alertText: 'Slow your horses! Wait a bit before voting again.', alert: true });
         }
         // add error if needed
       });
@@ -55,21 +55,32 @@ class About extends Component {
   isActive(i) {
     const { places } = this.state;
     places[i].active = true;
+    places[i].color = '#F466CC'; // purple
     this.setState({ places });
   }
 
   isNotActive(i) {
     const { places } = this.state;
     places[i].active = false;
+    places[i].color = null;
     this.setState({ places });
   }
 
   render() {
+    const getColor = (m, i) => {
+      let color = '#D3D3D3'; // gray
+      if (m.color) {
+        color = m.color;
+      } else if (i === 0) {
+        color = '#CCAC00'; // gold
+      }
+      return color;
+    };
     const { places } = this.state;
     const placeNames = places.map((place, i) => (
       <div
         key={place.place}
-        style={{ minHeight: '24px', maxWidth: '400px', backgroundColor: '#D3D3D3', margin: '0 0 5px 15px', padding: '5px' }}
+        style={{ minHeight: '24px', maxWidth: '400px', backgroundColor: getColor(place, i), margin: '0 8px 5px 15px', padding: '5px' }}
         onMouseEnter={() => { this.isActive(i); }}
         onMouseLeave={() => { this.isNotActive(i); }}
       >
@@ -111,7 +122,7 @@ class About extends Component {
               </p>
             </div>
             <div className="usa-row">
-              {this.state.alertText ? <span style={{ color: 'red' }}>{this.state.alertText}</span> : 'Click on the plus to vote'}
+              {this.state.alertText ? <span style={{ color: (this.state.alert ? 'red' : 'blue') }}>{this.state.alertText}</span> : 'Click on the plus to vote'}
             </div>
           </div>
           <br />

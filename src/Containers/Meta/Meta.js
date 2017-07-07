@@ -30,7 +30,7 @@ class Meta extends Component {
                 Hosted using AWS S3 static web site hosting, Cloudfront and Route 53
                 for about 25 cents per month.
                 <br /><br />
-                Powered by Lambda, API Gateway and DyanmoDB.
+                Powered by Lambda, API Gateway and DynamoDB.
                 <br /><br />
                 Continuously deployed using Github and Codeship.
               </p>
