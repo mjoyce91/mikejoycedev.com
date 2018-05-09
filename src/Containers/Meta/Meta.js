@@ -24,13 +24,13 @@ class Meta extends Component {
           <div className="usa-row">
             <div className="usa-row" style={{ paddingLeft: '8%', paddingRight: '8%' }}>
               <p style={{ textAlign: 'center', verticalAlign: 'middle' }}>
-                Designed using React and U.S. Web Design Standards. Built with webpack.
+                Designed using React and U.S. Web Design System. Built with webpack.
                 Facebook&#39;s create-react-app was used as a starting point.
                 <br /><br />
                 Hosted using AWS S3 static web site hosting, Cloudfront and Route 53
                 for about 25 cents per month.
                 <br /><br />
-                Powered by Lambda, API Gateway and DynamoDB.
+                Powered by AWS Lambda, API Gateway and DynamoDB.
                 <br /><br />
                 Continuously deployed using Github and Codeship.
               </p>
