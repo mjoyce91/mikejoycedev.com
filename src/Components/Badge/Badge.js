@@ -13,7 +13,7 @@ class Badge extends Component {
 
   render() {
     return (
-      <div className="Badge">
+      <div className="badge">
         <a href={this.props.url} >
           <img src={`/assets/img/${this.props.image}.jpg`} style={{ width: '80px' }} alt="badge" />
         </a>
