@@ -42,7 +42,7 @@ class Home extends Component {
                 <br />
               </div>
               <div className="usa-width-one-half">
-                <Badge image="linkedin" title="LinkedIn" url="https://www.linkedin.com/in/mike-joyce-1a7bb162" />
+                <Badge image="lin" title="LinkedIn" url="https://www.linkedin.com/in/mike-joyce-1a7bb162" />
                 <br />
               </div>
             </div>
