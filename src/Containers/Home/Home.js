@@ -25,11 +25,10 @@ class Home extends Component {
           <div className="usa-row">
             <div className="usa-row" style={{ paddingLeft: '8%', paddingRight: '8%' }}>
               <p style={{ textAlign: 'center', verticalAlign: 'middle', display: 'table-cell' }}>
-                I&apos;m a web developer currently working at
-                Booz Allen Hamilton in Washington, D.C.
+                I&apos;m a Lead Software Engineer at Capital One in McLean, Virginia.
                 My work has been in front-end technologies
-                like AngularJS, React, Highcharts and Leaflet, back-end frameworks like Node.js,
-                Express and PHP, and databases like MySQL and MongoDB.
+                like React, React Native and Angular, back-end frameworks like Node.js,
+                Express and Django, and databases like PostgreSQL, MongoDB and Oracle.
                 Certified AWS Solutions Architect - Associate. View all the tools I like
                 working with <a href="https://stackshare.io/mjoyce91/mystack">here</a>.
               </p>
