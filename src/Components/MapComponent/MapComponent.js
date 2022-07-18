@@ -52,7 +52,7 @@ class MapComponent extends Component {
       <Map center={position} zoom={this.state.zoom} scrollWheelZoom={false}>
         <TileLayer
           attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-          url="http://{s}.tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png"
+          url="https://stamen-tiles.a.ssl.fastly.net/toner/{z}/{x}/{y}.png"
         />
         {markers}
       </Map>
