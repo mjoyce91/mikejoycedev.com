@@ -55,7 +55,7 @@ class About extends Component {
   isActive(i) {
     const { places } = this.state;
     places[i].active = true;
-    places[i].color = '#F466CC'; // purple
+    places[i].color = '#DAA49A'; // pink
     this.setState({ places });
   }
 
@@ -68,7 +68,7 @@ class About extends Component {
 
   render() {
     const getColor = (m, i) => {
-      let color = '#D3D3D3'; // gray
+      let color = '#D8DBE2'; // gray
       if (m.color) {
         color = m.color;
       } else if (i === 0) {

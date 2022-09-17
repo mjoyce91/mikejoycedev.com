@@ -1,5 +1,14 @@
 .site-header {
 
+  *, a {
+    background-color: #373F51;
+    color: white;
+  }
+
+  .usa-logo-text > a {
+    color: #58A4B0;
+  }
+
   //overerides
   @media screen and (min-width: 951px) {
     .usa-header-basic .usa-navbar {
@@ -20,7 +29,7 @@
   }
 
   .active-url {
-    color: $color-primary;
+    color: #DAA49A;
   }
 
 }

@@ -11,3 +11,15 @@
 @import 'meta';
 @import 'footer';
 @import 'header';
+
+* {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+body {
+    background-color: #D8DBE2;
+}
+
+.leaflet-popup-content-wrapper {
+    font-size: 1.5em;
+}

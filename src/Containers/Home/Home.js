@@ -19,7 +19,7 @@ class Home extends Component {
         <div id="main-content">
           <Header props={this.props} />
           <div style={{ padding: '0px 10px 0px 10px' }}>
-            <h1>Mike Joyce - Web Developer</h1>
+            <h1>Mike Joyce - Software Engineer</h1>
           </div>
           <br />
           <div className="usa-row">
@@ -28,13 +28,19 @@ class Home extends Component {
                 I&apos;m a Lead Software Engineer at Capital One in McLean, Virginia.
                 My work has been in front-end technologies
                 like React, React Native and Angular, back-end frameworks like Node.js,
-                Express and Django, and databases like PostgreSQL, MongoDB and Oracle.
+                Golang, and Django, and databases like PostgreSQL, MongoDB and Oracle.
                 Certified AWS Solutions Architect - Associate. View all the tools I like
                 working with <a href="https://stackshare.io/mjoyce91/mystack">here</a>.
               </p>
             </div>
           </div>
           <br /><br /><br />
+          <div className="usa-row clearfix">
+            <div className="usa-width-one-whole">
+              <img src="/assets/img/profilepicture.jpg" alt="Mike Joyce" width="175px" style={{ borderRadius: '50%' }} />
+            </div>
+          </div>
+          <br />
           <div className="logos">
             <div className="usa-row clearfix">
               <div className="usa-width-one-half">
