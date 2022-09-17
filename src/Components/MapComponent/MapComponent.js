@@ -43,7 +43,13 @@ class MapComponent extends Component {
         position={marker.coords}
         icon={Leaflet.icon(markerIcon(marker, i))}
       >
-        <Popup>
+        <Popup onOpen={() => {
+          document.querySelector('.leaflet-pane.leaflet-popup-pane').addEventListener('click', (event) => {
+            event.preventDefault();
+          });
+        }
+        }
+        >
           <span> <strong>{marker.place}</strong> <br /> {marker.description} </span>
         </Popup>
       </Marker>

@@ -32,7 +32,7 @@ class Meta extends Component {
                 <br /><br />
                 Powered by AWS Lambda, API Gateway and DynamoDB.
                 <br /><br />
-                Continuously deployed using Github and Codeship.
+                Continuously deployed using Github Actions.
               </p>
             </div>
           </div>
